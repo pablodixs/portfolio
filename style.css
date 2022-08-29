@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'JetBrains Regular';
+    src: url(assets/fonts/JetBrainsMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'JetBrains Bold';
+    src: url(assets/fonts/JetBrainsMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'JetBrains Extrabold';
+    src: url(assets/fonts/JetBrainsMono-ExtraBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Regular', monospace;
+}
+
+body, html, :root {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+.logo {
+    width: 90px;
+    height: 35px;
+    background: url(assets/logo.svg) center no-repeat;
+    background-size: contain;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: 'JetBrains Bold', monospace;
+    font-size: 3rem;
+    letter-spacing: -3px;
+    margin: 1rem 0;
+}
+
+.hero h2, p {
+    color: #B8B8B8;
+}
+
+.hero a {
+    margin-top: 7rem;
+}
+
+.hero .primary:last-child {
+    margin-left: 1rem;
+}
+
+.primary  {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;  
+}
+
+#technologies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#technologies ul {
+    list-style: none;
+}
+
+#technologies li {
+    font-size: 24px;
+}
+
+.proj-cont {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.proj-card {
+    width: 50%;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.proj-card img {
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #FCB64C;
+    border-radius: 50px;
+}
